@@ -14,4 +14,4 @@ The data set is conformed by three subsets:
 
 ## Repository
 
-1. 🧱 Data set files will be available after publication in the (figshare)[https://figshare.com/search?q=ECD-UY] repository 🧱
+1. 🧱 Data set files will be available after publication in the [figshare](https://figshare.com/search?q=ECD-UY) repository 🧱
