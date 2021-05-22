@@ -12,8 +12,6 @@ The data set is conformed by three subsets:
 
 1. ECD-UY: Detailed household electricity consumption dataset of Uruguay
 
-
-3. Disaggregated energy consumption by appliance
 ## Repository
 
 1. 🧱 Data set files will be available after publication in the (figshare)[https://figshare.com/search?q=ECD-UY] repository 🧱
