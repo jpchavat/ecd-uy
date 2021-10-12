@@ -269,3 +269,20 @@ BEGIN{split(CUST_IDS,customers_ids,","); for(i in customers_ids){cust_ids[custom
     }
 }
 ' consumption_data_timers.csv  > consumption_data_timers_filtered.csv &
+
+
+# ------------------------------------------------------
+
+# EN: Convert ISO-8601 to epoch time
+
+head appliance_consumption_data.csv | \
+awk -F, '{
+    if (NR==1) { print $0 } else {
+        cmd = "date -j -u -f \"%Y-%m-%d %H:%M:%SZ\" \""$1"\" \"+%s\"";
+        cmd | getline epoch;
+        close(cmd)
+        printf epoch",";
+        for(i=2;i<=NF-1;i++) printf $i",";
+        print $NF
+    }
+}'
